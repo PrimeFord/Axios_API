@@ -23,7 +23,7 @@ Clone or download this repository and run with a local server of open `index.htm
 
 ## Preview
 
-[Preview Here](https://chipper-blini-c6c39d.netlify.app)
+[Preview Here]()
 
 ![screenshot](./public/image/snip.png)
 
