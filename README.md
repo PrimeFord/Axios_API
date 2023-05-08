@@ -11,7 +11,7 @@ Clone or download this repository and run with a local server of open `index.htm
 
 ## Features
 
-- Conversion Page
+- Quote Page
 
 ## Tech/framework used
 
