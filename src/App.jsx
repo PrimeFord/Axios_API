@@ -6,33 +6,44 @@ import QuoteCard from "./Components/QuoteCard";
 
 function App() {
   const url = "https://animechan.vercel.app/api/quotes";
-  const [count, setCount] = useState(0);
+  const url2 = "https://type.fit/api/quotes";
   const [quotes, setQuote] = useState([]);
+  const [one, setOne] = useState({ text: "Quote", author: "" });
+  const rand = Math.floor(Math.random() * quotes.length);
 
-  const fetch = () => {
+  const fetchQuote = () => {
     axios
-      .get("https://animechan.vercel.app/api/quotes")
+      .get(url2)
       .then((res) => {
-        setQuote(res.data[rand]);
+        setQuote(res.data);
       })
       .catch((err) => console.log(err));
+    console.log(url);
   };
-  const rand = () => {
-    Math.floor(Math.random() * quotes.length);
+  useEffect(() => {
+    fetchQuote();
+  }, []);
+
+  const fetch = (e) => {
+    e.preventDefault();
+    fetchQuote();
+    setOne(quotes[rand]);
+    console.log("fetch");
+    console.log(rand);
   };
 
-  useEffect(() => {
-    fetch();
-  }, []);
   return (
     <div className="App">
       <div>
         {/* {quotes.map((quo) => ( */}
         <QuoteCard
-          key={quotes.id}
-          quote={quotes.quote}
-          character={quotes.character}
-          anime={quotes.anime}
+          key={one.id}
+          quote={one.text}
+          character={one.author}
+          // quote={quotes.quote}
+          // character={quotes.character}
+          // anime={quotes.anime}
+          fetch={fetch}
         />
         {/* ))} */}
       </div>
