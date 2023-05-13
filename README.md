@@ -1,4 +1,5 @@
 # Axios_API
+
 Axios API: this project uses Axios to call the api to get different quotes and get data.
 
 ## Getting Started
@@ -12,7 +13,6 @@ Clone or download this repository and run with a local server of open `index.htm
 ## Features
 
 - Quote Page
-- Generate Page
 
 ## Tech/framework used
 
@@ -20,15 +20,12 @@ Clone or download this repository and run with a local server of open `index.htm
 - CSS
 - ReactJS
 - Vite
+- Axios
 - Tailwind-CSS
 
 ## Preview
 
-[Preview Here]()
-
-![screenshot](./public/image/snip.png)
-
-![screenshot](./public/image/snip.png)
+[Preview Here](https://eclectic-gingersnap-56bc15.netlify.app/)
 
 ![screenshot](./public/image/snip.png)
 
