@@ -4,7 +4,7 @@ Axios API: this project uses Axios to call the api to get different quotes and g
 
 ## Getting Started
 
-Clone or download this repository and run with a local server of open `index.html` with your favorite browser
+Clone or download this repository and run with a local server of open `index.html` with your favorite browser.
 
 ## Prequisite
 
